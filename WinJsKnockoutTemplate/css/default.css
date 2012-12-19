@@ -1,0 +1,53 @@
+﻿body {
+}
+
+.tile {
+    height: 128px;
+    width: 128px;
+    margin: 10px 10px 10px 0px;
+    vertical-align: bottom;
+    float:left;
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.tile:active {
+    border: 1px solid #ffffff;
+}
+
+.tile>span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 12px;
+}
+
+#snapped {
+    width: 100%;
+    text-align: center;
+    margin-top: 50%;
+}
+
+#fullscreen {
+    padding: 25px;
+}
+
+#toast {
+    background-image: url("/images/tiles/toast.png");
+}
+
+#data {
+    background-image: url("/images/tiles/data.png");
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
