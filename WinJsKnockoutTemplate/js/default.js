@@ -1,3 +1,0 @@
-﻿(function () {
-    WinJS.Application.start();
-})();

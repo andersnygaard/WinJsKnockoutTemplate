@@ -54,14 +54,16 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="default.html" />
-    <Content Include="images\logo.png" />
+    <Content Include="images\en-US\logo.png" />
+    <Content Include="images\nb-no\logo.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
     <Content Include="css\default.css" />
     <Content Include="images\tiles\data.png" />
+    <Content Include="images\tiles\language.png" />
     <Content Include="images\tiles\toast.png" />
-    <Content Include="js\default.js" />
+    <Content Include="js\lib\language.js" />
     <Content Include="js\lib\lifecycle.js" />
     <Content Include="js\lib\main.js" />
     <Content Include="js\lib\model.js" />
@@ -84,6 +86,10 @@
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="strings\en-US\resources.resjson" />
+    <PRIResource Include="strings\nb-no\resources.resjson" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment

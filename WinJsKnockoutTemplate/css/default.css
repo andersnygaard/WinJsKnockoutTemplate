@@ -32,12 +32,16 @@
     padding: 25px;
 }
 
-#toast {
-    background-image: url("/images/tiles/toast.png");
+#language {
+    background-image: url("/images/tiles/language.png");
 }
 
 #data {
     background-image: url("/images/tiles/data.png");
+}
+
+#toast {
+    background-image: url("/images/tiles/toast.png");
 }
 
 @media screen and (-ms-view-state: fullscreen-landscape) {

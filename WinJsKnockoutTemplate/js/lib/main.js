@@ -1,6 +1,7 @@
 ﻿require.config({
     paths: {
-        "knockout": "/Scripts/knockout-2.2.0"
+        "knockout": "/Scripts/knockout-2.2.0",
+        "mapping": "/Scripts/knockout.mapping-latest"
     }
 });
 
@@ -8,8 +9,9 @@ requirejs([
     "service",
     "knockout",
     "toast",
-    "viewState"],
-    function (service, ko, toast, viewState) {
+    "viewState",
+    "language"],
+    function (service, ko, toast, viewState, language) {
 
         var viewModel = new function () {
 
@@ -26,14 +28,19 @@ requirejs([
 
             // Toast
             this.showToast = function () {
-                toast.show("It's a toast message!", "And it's got a body too");
-            }
+                toast.show(language.get("greeting"), "And it's got a body too");
+            };
 
             // Data
             this.saveData = function () {
                 service.saveData("myValue");
                 toast.show("That's been saved");
-            }
+            };
+
+            // Language
+            this.showLanguage = function () {
+                toast.show(language.get("greeting"));
+            };
         }();
 
         require(["lifecycle"], function () {
@@ -55,5 +62,7 @@ requirejs([
             });
         });
 
+        WinJS.Resources.processAll();
+        WinJS.Application.start();
         ko.applyBindings(viewModel);
     });

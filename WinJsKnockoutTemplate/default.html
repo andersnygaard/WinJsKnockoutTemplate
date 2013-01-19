@@ -13,7 +13,6 @@
     <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
     <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
     <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
-    <script src="/js/default.js"></script>
     <script src="/Scripts/require.js" data-main="/js/lib/main"></script>
 </head>
 <body>
@@ -23,10 +22,11 @@
         <p>
             <div class="tile" id="toast" data-bind="click:showToast"><span>Toast message</span></div>
             <div class="tile" id="data" data-bind="click:saveData"><span>Data storage</span></div>
+            <div class="tile" id="language" data-bind="click:showLanguage"><span>Local strings</span></div>
         </p>
     </div>
     <div id = "snapped" data-bind="visible: viewState() == 'snapped'">
-        <img src="/images/logo.png" />
+        <img src="/images/logo.png"/>
         <h1 data-bind="text:appName"></h1>
     </div>
 </body>
