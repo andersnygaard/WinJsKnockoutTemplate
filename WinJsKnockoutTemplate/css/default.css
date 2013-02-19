@@ -1,4 +1,55 @@
-﻿body {
+﻿body
+{
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    margin-left: 120px;
+}
+.title
+{
+    height: 108px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+.title > h1 {
+    position: absolute;
+    font-size: 42pt;
+    bottom: 0px;
+    left: 0px;
+}
+.subtitle
+{
+    height: 55px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+.subtitle > h2 {
+    position: absolute;
+    font-size: 20pt;
+    bottom: 0px;
+    left: 0px;
+}
+.backbutton {
+    position: absolute;
+    top: 60px;
+    height: 40px;
+    left: 40px;
+}
+
+.snapped {
+    text-align: center;
+}
+
+.content
+{
+    padding-left: 120px;
+}
+
+.snapped {
+    margin-top: 33%;   
 }
 
 .tile {
@@ -22,12 +73,6 @@
     font-size: 12px;
 }
 
-#snapped {
-    width: 100%;
-    text-align: center;
-    margin-top: 50%;
-}
-
 #fullscreen {
     padding: 25px;
 }
@@ -45,13 +90,21 @@
 }
 
 @media screen and (-ms-view-state: fullscreen-landscape) {
+    .main    { display: block; }
+    .snapped { display: none; }
 }
 
 @media screen and (-ms-view-state: filled) {
+    .main    { display: none; }
+    .snapped { display: block; }
 }
 
 @media screen and (-ms-view-state: snapped) {
+    .main    { display: none; }
+    .snapped { display: block; }
 }
 
 @media screen and (-ms-view-state: fullscreen-portrait) {
+    .main    { display: block; }
+    .snapped { display: none; }
 }
