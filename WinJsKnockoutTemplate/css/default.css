@@ -39,10 +39,6 @@ header {
     left: 40px;
 }
 
-.snapped {
-    text-align: center;
-}
-
 .content
 {
     padding-left: 120px;
@@ -50,6 +46,7 @@ header {
 
 .snapped {
     margin-top: 33%;   
+    text-align: center;
 }
 
 .tile {
@@ -71,10 +68,6 @@ header {
     bottom: 10px;
     left: 10px;
     font-size: 12px;
-}
-
-#fullscreen {
-    padding: 25px;
 }
 
 #language {

@@ -1,11 +1,16 @@
 ﻿define(function () {
     var self = this;
+    var key = "app";
+
     return {
-        set: function (key, value) {
-            localStorage.setItem(key, value);
+        setKey: function() {
+            self.key = key;
         },
-        get: function (key) {
-            return localStorage.getItem(key);
+        set: function (value) {
+            localStorage.setItem(self.key, value);
+        },
+        get: function () {
+            return localStorage.getItem(self.key);
         }
     };
 });

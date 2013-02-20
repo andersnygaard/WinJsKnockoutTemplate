@@ -25,13 +25,13 @@
                 <h1 data-bind="text: appName"></h1>
             </div>
             <div class="subtitle">
-                <h2>20pt Subheader</h2>
+                <h2>20pt Subtitle</h2>
             </div>
         </header>
-        <div class = "content">
-            <div class="tile" id="toast" data-bind="click:showToast"><span>Toast message</span></div>
-            <div class="tile" id="data" data-bind="click:saveData"><span>Data storage</span></div>
-            <div class="tile" id="language" data-bind="click:showLanguage"><span>Local strings</span></div>
+        <div class = "content" data-bind="with:items">
+            <div class="tile" id="toast" data-bind="click:toast.click"><span>Toast message</span></div>
+            <div class="tile" id="data" data-bind="click:data.click"><span>Data storage</span></div>
+            <div class="tile" id="language" data-bind="click:language.click"><span>Local strings</span></div>
         </div>
     </section>
     <section class = "snapped">
