@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "WinJsKnockoutTemplate", "WinJsKnockoutTemplate\WinJsKnockoutTemplate.jsproj", "{DF814348-6CDD-4BF5-A14E-4ED35B9EF10E}"
 EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Tests", "Specs\Tests.jsproj", "{E328A753-906F-41AE-8EE8-90DB47F630A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,30 @@ Global
 		{DF814348-6CDD-4BF5-A14E-4ED35B9EF10E}.Release|x86.ActiveCfg = Release|x86
 		{DF814348-6CDD-4BF5-A14E-4ED35B9EF10E}.Release|x86.Build.0 = Release|x86
 		{DF814348-6CDD-4BF5-A14E-4ED35B9EF10E}.Release|x86.Deploy.0 = Release|x86
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Debug|ARM.Build.0 = Debug|ARM
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Debug|ARM.Deploy.0 = Debug|ARM
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Debug|x64.ActiveCfg = Debug|x64
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Debug|x64.Build.0 = Debug|x64
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Debug|x64.Deploy.0 = Debug|x64
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Debug|x86.ActiveCfg = Debug|x86
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Debug|x86.Build.0 = Debug|x86
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Debug|x86.Deploy.0 = Debug|x86
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Release|ARM.ActiveCfg = Release|ARM
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Release|ARM.Build.0 = Release|ARM
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Release|ARM.Deploy.0 = Release|ARM
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Release|x64.ActiveCfg = Release|x64
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Release|x64.Build.0 = Release|x64
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Release|x64.Deploy.0 = Release|x64
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Release|x86.ActiveCfg = Release|x86
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Release|x86.Build.0 = Release|x86
+		{E328A753-906F-41AE-8EE8-90DB47F630A1}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

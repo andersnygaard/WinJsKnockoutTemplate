@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Specs</title>
+
+    <!-- WinJS references -->
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    
+    <!-- Specs references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script type="text/javascript" src="Scripts/jquery-1.9.1.js"></script>
+    
+    <!-- Tests -->
+    <script src="Scripts/sinon-1-5-2.js"></script>
+    <script src="Scripts/SimpleJsUnit/Javascripts/simplejsunit-1.1.1-rt.js"></script>
+    <script src="Scripts/SimpleJsUnit/Javascripts/simplejsunit.testrunner-1.1.1-rt.js"></script>
+    
+    <!-- App start -->
+    <script src="/Scripts/require.js" data-main="/js/default"></script>    
+
+</head>
+<body>
+    <section class = "main">
+        <header>
+            <div class="title">
+                <h1>Tests</h1>
+            </div>
+            <div class="subtitle">
+                <h2>Results</h2>
+            </div>
+        </header>
+        <div class = "content" data-bind="with:items">
+            <div style="width:70%;float:left;background-color:#222222;">
+                <div style="padding: 20px 10px 15px 10px;color:#ffffff;" id="testrunner_navigator"></div>
+                <div style="padding: 10px 10px 15px 10px;color:#ffffff;">
+                    <b>Results:</b>
+                    <div style = "width:100%;border:1px solid #000000;background-color:#994444;height:10px;">
+                        <div id = "testrunner_percent" style = "width:30%;background-color:#449944;height:10px;"></div>
+                    </div><div id = "testrunner_results"></div>
+                </div>
+            </div>
+            <div style="width:70%;float:left;background-color:#333333;max-height:250px;overflow:auto;">
+                <div style="padding:10px;color:#ffffff;">
+                    <b>Output:</b>
+                    <div id = "testrunner_output" style="color:#bfbfbf"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "snapped">
+        <img src="images/logo.png"/>
+        <h1>Tests</h1>
+    </section>
+</body>
+</html>

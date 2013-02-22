@@ -1,4 +1,4 @@
-﻿define(["knockout"], function (ko) {
+﻿define([], function () {
 
     var app = WinJS.Application;
     var webUIApplication = Windows.UI.WebUI.WebUIApplication;

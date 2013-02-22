@@ -35,7 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>df814348-6cdd-4bf5-a14e-4ed35b9ef10e</ProjectGuid>
+    <ProjectGuid>e328a753-906f-41ae-8ee8-90db47f630a1</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
     <VisualStudioVersion>11.0</VisualStudioVersion>
@@ -47,50 +47,47 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>WinJsKnockoutTemplate_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>Specs_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="..\WinJsKnockoutTemplate\css\default.css">
+      <Link>css\default.css</Link>
+    </Content>
+    <Content Include="..\WinJsKnockoutTemplate\js\lib\service.js">
+      <Link>js\lib\service.js</Link>
+    </Content>
+    <Content Include="..\WinJsKnockoutTemplate\js\lib\storage.js">
+      <Link>js\lib\storage.js</Link>
+    </Content>
     <Content Include="default.html" />
-    <Content Include="images\en-US\logo.png" />
-    <Content Include="images\nb-no\logo.png" />
+    <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
-    <Content Include="css\default.css" />
-    <Content Include="images\tiles\data.png" />
-    <Content Include="images\tiles\language.png" />
-    <Content Include="images\tiles\toast.png" />
-    <Content Include="js\lib\language.js" />
-    <Content Include="js\lib\lifecycle.js" />
-    <Content Include="js\lib\main.js" />
-    <Content Include="js\lib\model.js" />
-    <Content Include="js\lib\service.js" />
-    <Content Include="js\lib\storage.js" />
-    <Content Include="js\lib\toast.js" />
-    <Content Include="js\lib\viewState.js" />
+    <Content Include="js\default.js" />
+    <Content Include="js\tests\for_service.js" />
+    <Content Include="js\tests\for_storage.js" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
-    <Content Include="Scripts\jquery.ba-tinypubsub.js" />
-    <Content Include="Scripts\knockout-2.2.0.debug.js" />
-    <Content Include="Scripts\knockout-2.2.0.js" />
-    <Content Include="Scripts\knockout.mapping-latest.debug.js" />
-    <Content Include="Scripts\knockout.mapping-latest.js" />
     <Content Include="Scripts\r.js" />
     <Content Include="Scripts\require.js" />
-    <None Include="WinJsKnockoutTemplate_TemporaryKey.pfx" />
+    <Content Include="Scripts\sinon-1-5-2.js" />
+    <Content Include="Scripts\SimpleJsUnit\Javascripts\simplejsunit-1.1.1-rt.js" />
+    <Content Include="Scripts\SimpleJsUnit\Javascripts\simplejsunit.testrunner-1.1.1-rt.js" />
+    <None Include="Specs_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
   </ItemGroup>
   <ItemGroup>
-    <PRIResource Include="strings\en-US\resources.resjson" />
-    <PRIResource Include="strings\nb-no\resources.resjson" />
+    <Folder Include="css\" />
+    <Folder Include="js\lib\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment

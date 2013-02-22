@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<title>SimpleJsUnit</title>
+<link rel = "stylesheet" type = "text/css" href = "http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+</head>
+<body>
+
+<div class = "container">
+
+<div class="container-fluid">
+
+<div class = "page-header">
+    <h1>SimpleJsUnit <small>Javascript test framework by Anders Nygaard</small></h1>
+</div>
+
+</div>
+
+<div class="container-fluid">
+    <div class="sidebar">
+        <h2>Intro</h2>
+    </div>    
+    <div class="content">
+        SimpleJsUnit is a test framework for Javascript. It includes a testrunner and a bookmarklet for running tests with a push of a button from your browser. It is meant to be simple, yet powerfull. SimpleJsUnit relies on a bookmarklet testrunner, but you could also run tests from console or a custom application. More in the doumentations to follow.
+    </div>
+</div>
+
+<div class="container-fluid" style = "margin-top: 50px;">
+    <div class="sidebar">
+        <h2>Getting started</h2>
+    </div>
+    <div class="content" style = "min-height:150px;">
+        <h3>Add references</h3>
+        In your page header, add a reference to SimpleJsUnit and the testrunner:
+<pre>&lt;script type = "text/javascript" src = "simplejsunit-1.1.0.js"&gt;&lt;/script&gt;
+&lt;script type = "text/javascript" src = "simplejsunit.testrunner-1.1.0.js"&gt;&lt;/script&gt;</pre>
+
+        <br />
+
+        <h3>Write some tests</h3>
+<pre>tests.add("TestGroupName", function () {
+    assert.fail("");
+});</pre>
+        <br />
+
+        <h3>Add the boomarklet and run your test</h3>
+        Add this bookmarklet to your browser's bookmarks toolbar and run your test:
+        <br /><br />
+	<a href="javascript:(function(){try{if(testRunner){testRunner.run()}}catch(e){alert('SimpleJsUnit testrunner is not loaded');}})();">Run tests in solution</a>
+     </div>
+</div>
+
+
+<div class="container-fluid" style = "margin-top: 50px;">
+    <div class="sidebar">
+        <h2>Asserts</h2>
+    </div>
+    <div class="content" style = "min-height:150px;">
+        
+        <h3>Classic asserts</h3>
+
+        Asserts looks like this:
+<pre>assert.fail("message goes here");</pre>
+
+        SimpleJsUnit supports the following asserts: throwsException, isTrue, isFalse, areEqual, areNotEqual, isNull, isNotNull, isInstanceOfType, isNotInstanceOfType, fail
+        
+        <br />
+        <br />
+
+        <h3>Fluent asserts</h3>
+        
+        Fluent asserts looks like this:
+<pre>that(_somevar_).should().beTrue("message goes here");</pre>
+
+        SimpleJsUnit supports the following fluent asserts: throwException, beTrue, beFalse, beSameAs, notBeSameAs, beNull, notBeNull, beInstanceOf, notBeInstanceOf, fail
+
+        <br />
+        <br />
+
+        <h3>Types</h3>
+        
+        IsInstanceOfType, IsNotInstanceOfType, beInstanceOf and notBeInstanceOf all require a type for comparison. Type, in this case, is a string and valid types are: string, boolean, number, function, object, array, regexp, date
+     </div>
+</div>
+
+
+<div class="container-fluid" style = "margin-top: 50px;">
+    <div class="sidebar">
+        <h2>Setup and teardown</h2>
+    </div>
+    <div class="content" style = "min-height:150px;">
+        
+        <h3>Setup</h3>
+
+        The setup function runs every time before a test is run:
+<pre>tests.setup.add("TestGroupName", function () {
+    persons = new Array();
+});</pre>
+        
+        <br />
+
+        <h3>Teardown</h3>
+        
+        The tearDown function runs every time after a test is run:
+<pre>tests.tearDown.add("TestGroupName", function () {
+    persons = null;
+});</pre>
+
+     </div>
+</div>
+
+
+<div class="container-fluid" style = "margin-top: 50px;">
+    <div class="sidebar">
+        <h2>Running tests</h2>
+    </div>
+    <div class="content" style = "min-height:150px;">
+        
+        <h3>From code or console</h3>
+
+        Run tests from console like firebug or from code with the following code:
+<pre>tests.run();</pre>
+
+        When the tests are run an object is returned. It looks like this:
+
+<pre>Object { numberOfTests=2, run=2, passed=0, failed=2, output="tests(0) - Age should be of type stringtests(1) - This test is supposed to fail", time="2 ms" }</pre>
+
+        <br />
+
+        <h3>With testrunner</h3>
+        
+	Add the bookmarklet to your favourites toolbar and push it. The bookmarklet determines if the test framework is loaded and adds jQuery in order to present the tests. Drag this link to your favourites toolbar to install the bookmarklet:
+<br><br>
+
+	<a href="javascript:(function(){try{if(testRunner){testRunner.run()}}catch(e){alert('SimpleJsUnit testrunner is not loaded');}})();">Run tests in solution</a>
+<br><br>
+<br><br>
+     </div>
+</div>
+</div>
+</body>
