@@ -1,5 +1,5 @@
 ﻿define([], function () {
-
+    
     var app = WinJS.Application;
     var webUIApplication = Windows.UI.WebUI.WebUIApplication;
 
@@ -15,8 +15,4 @@
     app.addEventListener("settings", function () {
         $.publish("app/settings");
     }, false);
-    app.addEventListener("unload", function () {
-        $.publish("app/unload");
-    }, false);
-
 });

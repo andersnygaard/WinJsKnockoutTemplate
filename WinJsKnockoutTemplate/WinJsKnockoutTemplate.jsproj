@@ -47,12 +47,15 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>WinJsKnockoutTemplate_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>WinJsKnockoutTemplate_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>A4157052A76D6C17A0CE83CE819064C719FA4EDA</PackageCertificateThumbprint>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="howto.html" />
     <Content Include="default.html" />
     <Content Include="images\en-US\logo.png" />
     <Content Include="images\nb-no\logo.png" />
@@ -61,6 +64,7 @@
     <Content Include="images\storelogo.png" />
     <Content Include="css\default.css" />
     <Content Include="images\tiles\data.png" />
+    <Content Include="images\tiles\howto.png" />
     <Content Include="images\tiles\language.png" />
     <Content Include="images\tiles\toast.png" />
     <Content Include="js\lib\language.js" />
@@ -71,16 +75,16 @@
     <Content Include="js\lib\storage.js" />
     <Content Include="js\lib\toast.js" />
     <Content Include="js\lib\viewState.js" />
+    <None Include="WinJsKnockoutTemplate_StoreKey.pfx" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Scripts\jquery.ba-tinypubsub.js" />
-    <Content Include="Scripts\knockout-2.2.0.debug.js" />
-    <Content Include="Scripts\knockout-2.2.0.js" />
-    <Content Include="Scripts\knockout.mapping-latest.debug.js" />
     <Content Include="Scripts\knockout.mapping-latest.js" />
+    <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\r.js" />
     <Content Include="Scripts\require.js" />
     <None Include="WinJsKnockoutTemplate_TemporaryKey.pfx" />

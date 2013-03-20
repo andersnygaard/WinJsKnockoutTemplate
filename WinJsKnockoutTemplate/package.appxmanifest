@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="df814348-6cdd-4bf5-a14e-4ed35b9ef10e" Version="1.0.0.0" Publisher="CN=Anders" />
+  <Identity Name="51117AndersNygaard.WinJsKnockoutTemplate" Version="1.0.0.2" Publisher="CN=3A0EE743-F92D-431C-BCDB-7C284015929F" />
   <Properties>
     <DisplayName>WinJsKnockoutTemplate</DisplayName>
-    <PublisherDisplayName>Anders</PublisherDisplayName>
+    <PublisherDisplayName>Anders Nygaard</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
   <Prerequisites>

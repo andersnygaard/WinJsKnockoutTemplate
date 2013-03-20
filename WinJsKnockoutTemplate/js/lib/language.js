@@ -3,7 +3,6 @@
 
     return {
         get: function (key) {
-
             return WinJS.Resources.getString(key).value;
         }
     };

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- My references -->
+    <link href="/css/default.css" rel="stylesheet" />
+</head>
+<body>
+    <section class = "main">
+        <aside class="backbutton">
+            <button class="win-backbutton" onclick="history.go(-1);"></button>
+        </aside>
+        <header>
+            <div class="title">
+                <h1>App example</h1>
+            </div>
+        </header>
+        <div class = "content" data-bind="with:items">
+            <div class="column" style="max-width: 50%">
+                <h2>Howto</h2>
+                <p>
+                    Out of the box, Windows 8 projects uses WinJs. It's ok, but there's nothing stopping you from using your favorite frameworks. Focus on the creative part. Use this app as an ispiration.
+                </p>
+                <h3>Save as template</h3>
+                <p>
+                    In Visual Studio 2012, go to File-Export Template and finish the wizard. This app is now saved as a template project. The next time you start a Visual Studio project, you should find the WinJsKnockoutTemplate under JavaScript projects.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class = "snapped">
+        <img src="images/logo.png"/>
+        <h1>App example</h1>
+    </section>
+</body>
+</html>

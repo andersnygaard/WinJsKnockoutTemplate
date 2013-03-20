@@ -47,7 +47,9 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>Specs_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>Tests_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>7416636F23B5ED000FDC12F9F2F8589A28FFB21A</PackageCertificateThumbprint>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -56,11 +58,14 @@
     <Content Include="..\WinJsKnockoutTemplate\css\default.css">
       <Link>css\default.css</Link>
     </Content>
+    <Content Include="..\WinJsKnockoutTemplate\js\lib\model.js">
+      <Link>js\Lib\model.js</Link>
+    </Content>
     <Content Include="..\WinJsKnockoutTemplate\js\lib\service.js">
-      <Link>js\lib\service.js</Link>
+      <Link>js\Lib\service.js</Link>
     </Content>
     <Content Include="..\WinJsKnockoutTemplate\js\lib\storage.js">
-      <Link>js\lib\storage.js</Link>
+      <Link>js\Lib\storage.js</Link>
     </Content>
     <Content Include="default.html" />
     <Content Include="images\logo.png" />
@@ -68,8 +73,11 @@
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
     <Content Include="js\default.js" />
+    <Content Include="js\tests\for_model.js" />
     <Content Include="js\tests\for_service.js" />
     <Content Include="js\tests\for_storage.js" />
+    <None Include="Tests_StoreKey.pfx" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -87,7 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="css\" />
-    <Folder Include="js\lib\" />
+    <Folder Include="js\Lib\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment

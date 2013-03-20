@@ -10,15 +10,15 @@ requirejs([
     "knockout",
     "toast",
     "viewState",
-    "language"],
-    function (service, ko, toast, viewState, language) {
+    "language",
+    "navigation"],
+    function (service, ko, toast, viewState, language, navigation) {
 
         var ViewModel = function () {
 
             var self = this;
             this.service = service;
             this.model = service.getModel();
-            this.appName = ko.observable(self.model.appName);
 
             // Viewstate
             this.viewState = viewState.observable;
@@ -27,6 +27,11 @@ requirejs([
             });
 
             this.items = {
+                howto: {
+                    click: function () {
+                        window.location = "howto.html";
+                    }
+                },
                 toast: {
                     click: function(){
                         toast.show(language.get("greeting"), "And it's got a body too");
@@ -58,10 +63,6 @@ requirejs([
 
             $.subscribe("app/settings", function () {
                 toast.show("Settings opened");
-            });
-
-            $.subscribe("app/unload", function () {
-                toast.show("It's unloaded");
             });
         });
 

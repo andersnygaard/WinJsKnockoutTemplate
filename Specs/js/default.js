@@ -10,7 +10,8 @@ var runTests = function() {
 };
 
 requirejs(["tests/for_storage",
-           "tests/for_service"], function () {
+           "tests/for_service",
+           "tests/for_model"], function () {
 
     WinJS.Application.start();
     setTimeout(runTests, 1000);

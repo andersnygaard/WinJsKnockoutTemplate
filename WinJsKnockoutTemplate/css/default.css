@@ -41,7 +41,20 @@ header {
 
 .content
 {
+    padding-top: 24px;
+    display: block;
+    position: relative;
     padding-left: 120px;
+}
+
+.column {
+    display: block;
+    float: left;
+    padding-right: 60px;
+}
+.column>h2 {
+    font-size: 28px;
+    padding-bottom: 5px;  
 }
 
 .snapped {
@@ -50,7 +63,7 @@ header {
 }
 
 .tile {
-    height: 128px;
+    height: 136px;
     width: 128px;
     margin: 10px 10px 10px 0px;
     vertical-align: bottom;
@@ -66,8 +79,12 @@ header {
 .tile>span {
     position: absolute;
     bottom: 10px;
-    left: 10px;
+    left: 20px;
     font-size: 12px;
+}
+
+#howto {
+    background-image: url("/images/tiles/howto.png");
 }
 
 #language {

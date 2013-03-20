@@ -1464,7 +1464,10 @@ jQuery.support = (function() {
 		container = document.createElement("div");
 		container.style.cssText = "border:0;width:0;height:0;position:absolute;top:0;left:-9999px;margin-top:1px";
 
-		body.appendChild( container ).appendChild( div );
+	    MSApp.execUnsafeLocalFunction(function() {
+	        body.appendChild(container).appendChild(div);
+	    });
+		
 
 		// Support: IE8
 		// Check if table cells still have offsetWidth/Height when they are set
@@ -9594,4 +9597,4 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 	define( "jquery", [], function () { return jQuery; } );
 }
 
-})( window );
+})(window);
