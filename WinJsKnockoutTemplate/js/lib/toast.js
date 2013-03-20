@@ -1,11 +1,12 @@
-﻿define(function () {
-    var self = this;
+﻿var app = app || {};
 
+app.toast = function () {
+    
     return {
-        show: function (title, body) {
+        show: function(title, body) {
             var notifications = Windows.UI.Notifications;
             var templateType;
-            
+
             if (!body)
                 templateType = notifications.ToastTemplateType.toastText01;
             else
@@ -14,7 +15,7 @@
             var xml = notifications.ToastNotificationManager.getTemplateContent(templateType);
 
             var textNodes = xml.getElementsByTagName("text");
-            textNodes.forEach(function (value, index) {
+            textNodes.forEach(function(value, index) {
                 if (index == 0) {
                     value.appendChild(xml.createTextNode(title));
                 } else if (index == 1) {
@@ -30,4 +31,6 @@
             notifier.show(toast);
         }
     };
-});
+};
+
+define(app.toast);

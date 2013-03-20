@@ -1,5 +1,7 @@
-﻿define(["knockout"], function (ko) {
-    
+﻿var app = app || {};
+
+app.viewState = function(ko) {
+
     var self = this;
 
     this.viewStates = [];
@@ -9,7 +11,7 @@
     this.current = viewStates[Windows.UI.ViewManagement.ApplicationView.value];
     this.currentAsObservable = ko.observable(current);
 
-    window.addEventListener("resize", function (e) {
+    window.addEventListener("resize", function(e) {
         var viewState = Windows.UI.ViewManagement.ApplicationView.value;
         self.current = self.viewStates[viewState];
         self.currentAsObservable(self.viewStates[viewState]);
@@ -19,8 +21,10 @@
     return {
         all: self.viewStates,
         current: self.current,
-        observable: ko.computed(function(){
+        observable: ko.computed(function() {
             return self.currentAsObservable();
         })
     };
-});
+};
+
+define(["knockout"], app.viewState);

@@ -1,4 +1,5 @@
-﻿define(["storage", "model"], function (storage, model) {
+﻿var app = app || {};
+app.service = function(storage, model) {
 
     return {
         getModel: function() {
@@ -11,4 +12,6 @@
             return storage.get();
         }
     };
-});
+};
+
+define(["storage", "model"], app.service);

@@ -1,4 +1,6 @@
-﻿define(function () {
+﻿var app = app || {};
+
+app.storage = function() {
     var self = this;
     var key = "app";
 
@@ -6,11 +8,13 @@
         setKey: function() {
             self.key = key;
         },
-        set: function (value) {
+        set: function(value) {
             localStorage.setItem(self.key, value);
         },
-        get: function () {
+        get: function() {
             return localStorage.getItem(self.key);
         }
     };
-});
+};
+
+define(app.storage);
