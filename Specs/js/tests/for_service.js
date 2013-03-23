@@ -1,4 +1,4 @@
-﻿define(["service"], function (service) { 
+﻿define(["service"], function () { 
     tests.add("service - function saveData should save to storage", function () {
         var storage = {};
         storage.set = sinon.spy();
