@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="51117AndersNygaard.WinJsKnockoutTemplate" Version="1.0.0.2" Publisher="CN=3A0EE743-F92D-431C-BCDB-7C284015929F" />
+  <Identity Name="WinJsKnockoutTemplate" Version="1.0.0.0" Publisher="CN=3A0EE743-F92D-431C-BCDB-7C284015929F" />
   <Properties>
     <DisplayName>WinJsKnockoutTemplate</DisplayName>
     <PublisherDisplayName>Anders Nygaard</PublisherDisplayName>

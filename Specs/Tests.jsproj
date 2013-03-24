@@ -77,7 +77,6 @@
     <Content Include="js\tests\for_service.js" />
     <Content Include="js\tests\for_storage.js" />
     <None Include="Tests_StoreKey.pfx" />
-    <None Include="Package.StoreAssociation.xml" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -94,6 +93,9 @@
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AppPackages\" />
+    <Folder Include="bin\" />
+    <Folder Include="bld\" />
     <Folder Include="css\" />
     <Folder Include="js\Lib\" />
   </ItemGroup>
